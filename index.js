@@ -17,6 +17,7 @@ async function getCats() {
 }
 
 async function analyseCats(cats) {
+    console.log('Analysing kitties...')
     for (var singleCat in cats) {
         console.log(singleCat.text)
     }
