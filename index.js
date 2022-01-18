@@ -1,6 +1,6 @@
 module.exports = async function getCats() {
     const axios = require('axios');
-    let result;
+    var result;
 
     await axios
         .get('https://cat-fact.herokuapp.com/facts')
