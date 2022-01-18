@@ -8,6 +8,7 @@ async function getCats() {
             return response
         })
         .then((cats) => {
+            console.log(cats);
             result = cats.data;
         })
         .catch((err) => {
