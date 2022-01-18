@@ -1,4 +1,4 @@
-module.exports = async function getCats() {
+async function getCats() {
     const axios = require('axios');
     var result;
 
@@ -16,8 +16,13 @@ module.exports = async function getCats() {
     return result;
 }
 
-module.exports = async function analyseCats(cats) {
+async function analyseCats(cats) {
     for (var singleCat in cats) {
         console.log(singleCat.text)
     }
+}
+
+module.exports = {
+    getCats: function() {},
+    analyseCats: function(cats) {}
 }
