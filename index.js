@@ -15,3 +15,9 @@ module.exports = async function getCats() {
         });
     return result;
 }
+
+module.exports = async function analyseCats(cats) {
+    for (var singleCat in cats) {
+        console.log(singleCat.text)
+    }
+}
