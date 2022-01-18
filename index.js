@@ -8,7 +8,7 @@ module.exports = async function getCats() {
             return response
         })
         .then((cats) => {
-            result = cats.data.objects;
+            result = cats.data;
         })
         .catch((err) => {
             console.log(err)
