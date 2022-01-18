@@ -3,12 +3,11 @@ async function getCats() {
     var result;
 
     await axios
-        .get('https://cat-fact.herokuapp.com/facts')
+        .get('https://dog-api.kinduff.com/api/facts')
         .then((response) => {
             return response
         })
         .then((cats) => {
-            console.log(cats);
             result = cats.data;
         })
         .catch((err) => {
