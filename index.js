@@ -23,6 +23,6 @@ async function analyseCats(cats) {
 }
 
 module.exports = {
-    getCats: function() {},
-    analyseCats: function(cats) {}
+    getCats: async function() {},
+    analyseCats: async function(cats) {}
 }
