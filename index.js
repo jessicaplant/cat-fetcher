@@ -3,14 +3,15 @@ async function getCats() {
     var result;
 
     await axios
-        .get('https://dog-api.kinduff.com/api/facts')
+        .get('https://cat-fact.herokuapp.com/facts')
         .then((response) => {
             return response
         })
         .then((cats) => {
-            result = cats.data;
+            result = cats;
         })
         .catch((err) => {
+            result = err
             console.log('ERROR 2')
             console.log(err)
         });
