@@ -12,6 +12,7 @@ async function getCats() {
             result = cats.data;
         })
         .catch((err) => {
+            console.log('ERROR 2')
             console.log(err)
         });
     return result;
