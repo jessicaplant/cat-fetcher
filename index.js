@@ -1,4 +1,4 @@
-async function getCats() {
+module.exports = async function getCats() {
     const axios = require('axios');
     var result;
 
@@ -18,14 +18,14 @@ async function getCats() {
     return result;
 }
 
-async function analyseCats(cats) {
-    console.log('Analysing kitties...')
-    for (var singleCat in cats) {
-        console.log(singleCat.text)
-    }
-}
-
-module.exports = {
-    getCats: async function() {},
-    analyseCats: async function(cats) {}
-}
+// async function analyseCats(cats) {
+//     console.log('Analysing kitties...')
+//     for (var singleCat in cats) {
+//         console.log(singleCat.text)
+//     }
+// }
+//
+// module.exports = {
+//     getCats: async function() {},
+//     analyseCats: async function(cats) {}
+// }
